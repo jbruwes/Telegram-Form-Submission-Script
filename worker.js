@@ -1,6 +1,5 @@
 export default {
-  async fetch(request, 
-    { ALLOWED_ORIGIN: allowedOrigin, TELEGRAM_API_KEY: telegramToken, TELEGRAM_CHAT_ID: chatId }) {
+  async fetch(request, { ALLOWED_ORIGIN: allowedOrigin, TELEGRAM_API_KEY: telegramToken, TELEGRAM_CHAT_ID: chatId }) {
     const message = {
       200: "Сообщение отправлено",
       403: "Потеряно",
