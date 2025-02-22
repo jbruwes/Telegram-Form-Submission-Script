@@ -9,7 +9,9 @@ To run this project, you will need a Cloudflare account and have to add the foll
 
 `TELEGRAM_API_KEY` = "You get it from @Botfather"
 
-`TELEGRAM_CHAT_ID` = "Your telegram Group id you get using @MissRose_bot "
+`TELEGRAM_CHAT_ID` = "Your telegram Group id you get using @MissRose_bot"
+
+`ALLOWED_ORIGIN` = "Your website url"
 
 ## Setting up Telegram
 
@@ -43,30 +45,16 @@ And add the following Variables
 
 `TELEGRAM_API_KEY` = "You get it from @Botfather"
 
-`TELEGRAM_CHAT_ID` = "Your telegram Group id you get using @MissRose_bot "
+`TELEGRAM_CHAT_ID` = "Your telegram Group id you get using @MissRose_bot"
+
+`ALLOWED_ORIGIN` = "Your website url"
 
 and press "Deploy".
 
-### Step 5:
-
-Click on the Edit Code button located at the top rught corner. 
-Copy the code from this repositories worker.js file and paste it there in cloudflare.
-
-#### Locate the following line of code 
-"Its locate at the 6th line"
-
-```bash
-  async function handleRequest(request) {
-  const allowedOrigin = 'valid_url_here'; //your url goes here
-```
-#### Replace the "valid_url_here" with your website url and > Press "Deploy"
-it is the url of your website from where you wanna allow to take html form data.
-This will serve as the authorised website where this thing will be allowed to use.
-
-### Step 6: 
+### Step 5: 
 Open the worker url and keep it safe for later use.
 
-### Step 7: 
+### Step 6: 
 
 Use the worker link in your website, I have given a simple format in the repo as ```form.txt``` 
 
